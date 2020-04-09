@@ -3,8 +3,8 @@ var fs = require("fs")
 const genResponse = {
 
   generateMarkdown(res, response) {
-   const userInfo =
-`# ${response.title}
+   const returnRequest = `
+# ${response.title}
 
 ## Description 
   ${response.description}
@@ -31,7 +31,7 @@ ${response.tests}
 ${ response.license }`;
   
 
-fs.writeFile("README.md",userInfo,function(err) {
+fs.writeFile("README.md",returnRequest,function(err) {
   if (err) {
     return console.log(err)
   }

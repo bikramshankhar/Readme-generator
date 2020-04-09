@@ -1,15 +1,26 @@
-# Readme Generator
 
-CLI that generates from user`s input. The users are prompted with some question and base on answers, It will generates readme.md file.
+# Readme generator
 
-<img src="./image/screenshot.png">
+## Description 
+  generate readme.md file
 
+## Table of Contents
+   
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+    
+## Installation
+  npm
 
 ## Usage
+  CIL
 
-```
-npm install
-```
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Contributing
+  bikram
 
+## Tests
+generate 
+
+## License 
+MIT
