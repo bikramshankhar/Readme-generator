@@ -1,6 +1,6 @@
 
 var fs = require("fs")
-const genResponse = {
+const generateMarkdown = {
 
   generateMarkdown(res, data) {
    const returnRequest = `
@@ -40,5 +40,5 @@ console.log ("Success!")
 
   }
 }
-module.exports = genResponse;
+module.exports = generateMarkdown;
 
