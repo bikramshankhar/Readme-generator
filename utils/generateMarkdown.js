@@ -2,12 +2,12 @@
 var fs = require("fs")
 const genResponse = {
 
-  generateMarkdown(res, response) {
+  generateMarkdown(res, data) {
    const returnRequest = `
-# ${response.title}
+# ${data.title}
 
 ## Description 
-  ${response.description}
+  ${data.description}
 
 ## Table of Contents
    
@@ -16,19 +16,19 @@ const genResponse = {
 * [License](#license)
     
 ## Installation
-  ${response.installation }
+  ${data.installation }
 
 ## Usage
-  ${response.usage }
+  ${data.usage }
 
 ## Contributing
-  ${response.contributors}
+  ${data.contributors}
 
 ## Tests
-${response.tests}
+${data.tests}
 
 ## License 
-${ response.license }`;
+${ data.license }`;
   
 
 fs.writeFile("README.md",returnRequest,function(err) {
